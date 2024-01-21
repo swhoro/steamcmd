@@ -18,4 +18,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/steamcmd:latest
     - name: Push Image
-      run: docker push steamcmd/steamcmd
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/steamcmd
