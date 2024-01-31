@@ -2,7 +2,7 @@ name: Build & Push steamcmd
 
 on:
   schedule:
-  - cron: "* * 1/15 * *"
+  - cron: "0 0 */15 * *"
   workflow_dispatch:
 
 jobs:
